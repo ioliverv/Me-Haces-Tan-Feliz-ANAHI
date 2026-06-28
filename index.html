@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me haces tanto bien ANAHI ❤️</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Me haces tanto bien ANAHI ❤️">
+    <meta property="og:description"
+        content="Porque tú eres mi lugar bonito, mi paz y una de las cosas más lindas que tengo en mi vida. Me rindo a ti ❤️">
+    <meta property="og:image" content="preview.png">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Inter:wght@300;400&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Ambient Background -->
+    <div class="bg-gradient"></div>
+
+    <!-- Cosmic Nebula -->
+    <div class="nebula-bg">
+        <div class="nebula-blob n-red"></div>
+        <div class="nebula-blob n-pink"></div>
+        <div class="nebula-blob n-darkred"></div>
+    </div>
+
+    <!-- Bouquet Container (JS Populated) -->
+    <div class="bouquet-bg">
+    </div>
+
+    <!-- Global Particles -->
+    <div class="petals-container" id="petals-container"></div>
+
+    <!-- Entry Actions -->
+    <button id="song-btn" class="continue-btn">❤️Me haces tanto bien❤️</button>
+    <button id="finish-lyrics-btn" class="continue-btn" style="display: none; opacity: 0; transition: opacity 1s ease; z-index: 60;">TENGO ALGO
+        QUE DECIRTE</button>
+
+    <!-- Lyrics Display -->
+    <div class="lyrics-wrapper hidden" id="lyrics-wrapper">
+        <div class="lyrics-inner" id="lyrics-content">
+        </div>
+    </div>
+
+    <!-- Main Card Container -->
+    <div class="card-wrapper hidden" id="card-wrapper">
+        <div class="card">
+            <div class="top-plaque">A & O</div>
+            <div class="card-inner">
+                <h1 class="card-title">Holaaa, Anahí</h1>
+                <div class="card-divider">❦ ════ •⊰ 🤍 ⊱• ════ ❦</div>
+                <div class="card-text" id="letter-content">
+                    <!-- Dynamic letter content target -->
+                </div>
+                <div id="touch-to-continue"
+                    style="display: none; text-align: center; margin-top: 30px; margin-bottom: 20px; cursor: pointer; color: #a71120; font-family: 'Inter', sans-serif; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 4px; opacity: 0; transition: opacity 1s ease; font-weight: 400; padding: 15px; border: 1px solid rgba(167, 17, 32, 0.2); border-radius: 4px; background: rgba(167, 17, 32, 0.05);">
+                    Toca para continuar</div>
+                <div class="card-divider-bottom" id="bottom-divider" style="opacity: 0; transition: opacity 2s;">❦ ════
+                    •⊰ ❂ ⊱• ════ ❦</div>
+                <p class="card-signature" id="signature" style="opacity: 0; transition: opacity 2s;">de Oliver</p>
+                <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
+                    <button id="restart-btn" class="continue-btn" style="display: none; position: relative; opacity: 0; transition: opacity 2s ease; border-color: rgba(139, 0, 0, 0.4); color: #8b0000;">¿Volvemos a vivirlo? ✨</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Audio -->
+    <audio id="bg-music" src="song.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>
